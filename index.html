@@ -186,13 +186,19 @@
       </video> -->
       <!-- <img src="./static/images/kitti_map.jpg" height="300"> -->
       
-      <img class="rounded" src="./static/images/MP3D_allvisexp.png" >
+      <img class="rounded" src="./static/images/teasing_version11.png" >
       <br><br><br>
-      <h2 class="subtitle has-text-centered">
+      <!-- <h2 class="subtitle has-text-centered">
           DeepExplorer exploration result on <b>MP3D room scene q9vSo1VnCiC</b>. We show both efficient exploration results in top row, sub-figure A, B, C, and
           also relatively less-efficient exploration in sub-figure E and F, which are mainly due to local repetitive exploration. We further show an inefficient
           exploration example in sub-figure D. Two room scene 3D visualization is given in the left-most subfigures. The agent exploration starting-position is marked
-          by a red rectangle patch.</h2>
+          by a red rectangle patch.</h2> -->
+        <h2 class="subtitle has-text-centered">
+          We propose DeepExplorer for efficient metric-free visual exploration based on task and motion planning entirely
+          in an image feature space. We train DeepExplorer via deeply-supervised imitation through joint feature hallucination and 
+          action prediction, whose importance is shown in our ablation study. Through experiment on both exploration and navigation
+          task, we show the efficiency and strong sim2sim/sim2real generalization capability of DeepExplorer.
+        </h2>
     <!-- <h2 class="subtitle has-text-centered">
       (The <span style="color:#000000;">black</span> / <span style="color:#ff0000;">red</span> lines are the ground truth / predicted camera trajectory)
     </h2> -->
@@ -239,7 +245,7 @@
             We show DeepExplorer's exploration efficiency and strong sim2sim generalization capability on large-scale simulation datasets like Gibson and MP3D. 
             Its effectiveness is further validated via the image-goal navigation performance on the resulting topological map. We further show its strong zero-shot sim2real generalization capability in real-world experiments.
           </p>
-          <img class="rounded" src="./static/images/teasing_version11.png" >
+          <!-- <img class="rounded" src="./static/images/teasing_version11.png" > -->
           <br><br><br>
           <!DOCTYPE html>
           <html>
@@ -300,7 +306,7 @@
                     <p>
                       The feature extractor g<sub>ψ</sub> takes image I<sub>t</sub> as input and generates the corresponding feature vector
                       f<sub>t</sub>. TaskPlanner π<sub>θ<sub>T</sub></sub> is a recurrent neural network (RNN) consuming a sequence of features {f<sub>t−10</sub> , · · · , f<sub>t</sub> } 
-                      to hallucinate the next best feature to visit L f&#770;<sub>t+1</sub> . MotionPlanner π<sub>θ<sub>M</sub></sub> consumes the concatenation of f<sub>t</sub> and f^<sub>t+1</sub> and generates the action to move the agent towards the hallucinated
+                      to hallucinate the next best feature to visit f&#770;<sub>t+1</sub> . MotionPlanner π<sub>θ<sub>M</sub></sub> consumes the concatenation of f<sub>t</sub> and f&#770;<sub>t+1</sub> and generates the action to move the agent towards the hallucinated
                       feature. During training, we supervise all the intermediate outputs including the intermediate hallucinated features { f&#770;<sub>t−9</sub> , · · · , f&#770;<sub>t</sub> } and the intermediate actions
                       {â<sub>t−10</sub> , · · · , â<sub>t−1</sub> }, in addition to the final output f&#770;<sub>t+1</sub> and â<sub>t</sub>. During inference, current observation I<sub>t</sub> is firstly encoded and fed into π<sub>θ<sub>T</sub></sub> to hallucinate
                       f&#770;<sub>t+1</sub> , and then f&#770;<sub>t+1</sub> combined with the f<sub>t</sub> is fed into π<sub>θ<sub>M</sub></sub> for motion planning. L<sub>T</sub> is L<sub>2</sub> loss and L<sub>M</sub> is cross entropy loss (the subscripts T and M
