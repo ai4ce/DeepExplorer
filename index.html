@@ -70,14 +70,14 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">
             <!-- <img src="./static/images/logo.png" width="45"> -->
-            DeepExplorer&nbsp;&nbsp
+            DeepExplorer&nbsp;&nbsp;
           </h1>
           <h1 class="title is-2 publication-title">Metric-Free Exploration for Topological Mapping by Task and Motion Imitation in Feature Space</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="">Yuhang He*</a><sup>1</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=H1p3ve8AAAAJ&hl=en">Yuhang He*</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://zichuanfang2015@yahoo.com">Irving Fang*</a><sup>2</sup>,</span>
+              <a href="https://irvingf7.github.io/">Irving Fang*</a><sup>2</sup>,</span>
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=i_aajNoAAAAJ">Yiming Li</a><sup>2</sup>
             </span>
@@ -93,7 +93,7 @@
             <span class="author-block"><sup>1</sup> University of Oxford </span>
           </div>
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>2</sup>New York University, Brooklyn, NY 11201, USA</span>
+            <span class="author-block"><sup>2</sup>New York University</span>
           </div>
 
           <div class="column has-text-centered">
@@ -139,8 +139,8 @@
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <span class="link-block">
-                <!-- add here later -->
+              <!-- <span class="link-block">
+                add here later
                 <a href="    "
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -148,7 +148,7 @@
                   </span>
                   <span>Data</span>
                 </a>
-              </span>
+              </span> -->
             </div>
 
           </div>
@@ -298,11 +298,17 @@
                   <div class="content has-text-justified">
                     <br>  
                     <p>
-                    SOMETHING HERE
-                      <li> 
+                      The feature extractor g<sub>ψ</sub> takes image I<sub>t</sub> as input and generates the corresponding feature vector
+                      f<sub>t</sub>. TaskPlanner π<sub>θ<sub>T</sub></sub> is a recurrent neural network (RNN) consuming a sequence of features {f<sub>t−10</sub> , · · · , f<sub>t</sub> } 
+                      to hallucinate the next best feature to visit L f&#770;<sub>t+1</sub> . MotionPlanner π<sub>θ<sub>M</sub></sub> consumes the concatenation of f<sub>t</sub> and f^<sub>t+1</sub> and generates the action to move the agent towards the hallucinated
+                      feature. During training, we supervise all the intermediate outputs including the intermediate hallucinated features { f&#770;<sub>t−9</sub> , · · · , f&#770;<sub>t</sub> } and the intermediate actions
+                      {â<sub>t−10</sub> , · · · , â<sub>t−1</sub> }, in addition to the final output f&#770;<sub>t+1</sub> and â<sub>t</sub>. During inference, current observation I<sub>t</sub> is firstly encoded and fed into π<sub>θ<sub>T</sub></sub> to hallucinate
+                      f&#770;<sub>t+1</sub> , and then f&#770;<sub>t+1</sub> combined with the f<sub>t</sub> is fed into π<sub>θ<sub>M</sub></sub> for motion planning. L<sub>T</sub> is L<sub>2</sub> loss and L<sub>M</sub> is cross entropy loss (the subscripts T and M
+                      denote Task and Motion respectively). h<sub>t</sub> denotes the hidden state of RNN.
+                      <!-- <li> 
                           SOMETHING HERE</li>
                       <li> 
-                          SOMETHING HERE</li>
+                          SOMETHING HERE</li> -->
                     </p>
                   </div>
                 </div>
@@ -342,7 +348,7 @@
                   <p>
                     (a) <a href="http://gibsonenv.stanford.edu/">Gibson dataset</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) <a href="  ">MP3D dataset</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) <a href="https://niessner.github.io/Matterport/">MP3D dataset</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (c) <a href="  ">Real-World indoor dataset </a>
                     <br>
@@ -351,46 +357,46 @@
                   </p>
           
                   <p>
-                    <em><b>Gibson dataset :</b></em> SOMETHING HERE</p>
+                    <!-- <em><b>Gibson dataset :</b></em> SOMETHING HERE</p> -->
                   <p>
-                    <em><b>MatterPort3D (MP3D) dataset : </b></em> SOMETHING HERE</p>
+                    <!-- <em><b>MatterPort3D (MP3D) dataset : </b></em> SOMETHING HERE</p> -->
                   <p>
-                    <em><b>Real-World indoor dataset : </b></em>SOMETHING HERE</p>
+                    <!-- <em><b>Real-World indoor dataset : </b></em>SOMETHING HERE</p> -->
                 </div>
               </div>
               <p>
-                &nbsp
+                &nbsp;
               </p>
               <p>
-                &nbsp
+                &nbsp;
               </p>
           
           
-              <section class="section">
-                <div class="container is-max-desktop">
+              <!-- <section class="section"> -->
+                <!-- <div class="container is-max-desktop"> -->
                   <!-- <br> -->
                   <!-- Abstract. -->
-                  <div class="columns is-centered has-text-centered">
-                    <div class="column is-four-fifths">
-                      <h2 class="title is-3">Training animation</h2>
-                      <div class="column is-full_width">
-                        <img src="static\images\KITTI_0018.gif" width=1000 height=90% overflow=hidden class="center"/>
-                        <h3 class="title is-4">
-                          SOMETHING HERE</h3>
-                        <p>
-                          &nbsp;
-                        </p>
-                        <img src="static\images\KITTI_0027.gif" width=1000 height=100px overflow=hidden class="center"/>
-                        <h3 class="title is-4">
-                          SOMETHING HERE</h3>
-                        <p>
-                          &nbsp;
-                        </p>
-                        <img src="static\images\NCLT_0108.gif" width=1000 height=100px overflow=hidden class="center"/>
-                        <h3 class="title is-4">
-                          SOMETHING HERE</h3>
-                        <p>
-                          &nbsp;
+                  <!-- <div class="columns is-centered has-text-centered"> -->
+                    <!-- <div class="column is-four-fifths"> -->
+                      <!-- <h2 class="title is-3">Training animation</h2> -->
+                      <!-- <div class="column is-full_width"> -->
+                        <!-- <img src="static\images\KITTI_0018.gif" width=1000 height=90% overflow=hidden class="center"/> -->
+                        <!-- <h3 class="title is-4"> -->
+                          <!-- SOMETHING HERE</h3> -->
+                        <!-- <p> -->
+                          <!-- &nbsp; -->
+                        <!-- </p> -->
+                        <!-- <img src="static\images\KITTI_0027.gif" width=1000 height=100px overflow=hidden class="center"/> -->
+                        <!-- <h3 class="title is-4"> -->
+                          <!-- SOMETHING HERE</h3> -->
+                        <!-- <p> -->
+                          <!-- &nbsp; -->
+                        <!-- </p> -->
+                        <!-- <img src="static\images\NCLT_0108.gif" width=1000 height=100px overflow=hidden class="center"/> -->
+                        <!-- <h3 class="title is-4"> -->
+                          <!-- SOMETHING HERE</h3> -->
+                        <!-- <p> -->
+                          <!-- &nbsp;
                         </p>
                         <img src="static\images\Nebula_E.gif" width=1000 height=100px overflow=hidden class="center"/>
                         <h3 class="title is-4">
@@ -400,10 +406,10 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                   <!--/ Abstract. -->
-                </div>
-              </section>
+                <!-- </div> -->
+              <!-- </section> -->
           
           
               
@@ -413,7 +419,7 @@
             <div class="container is-max-desktop content">
               <h2 class="title">BibTeX</h2>
               <pre><code>
-                SOMETHING HERE
+                
               </code></pre>
             </div>
           </section>
@@ -421,7 +427,7 @@
           <section class="section" id="Acknowledgements">
             <div class="container is-max-desktop content">
               <h2 class="title">Acknowledgements</h2>
-              Chen Feng is the corresponding author. The research is supported by ____SOMETHING HERE.
+              Chen Feng is the corresponding author. 
             </div>
           </section>
           
