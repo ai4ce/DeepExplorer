@@ -37,6 +37,7 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script src="./static/js/copy2clipboard.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="./static/images/ai4ce.png" />
 </head>
 <body>
@@ -73,13 +74,16 @@
             DeepExplorer&nbsp;&nbsp;
           </h1>
           <h1 class="title is-2 publication-title">Metric-Free Exploration for Topological Mapping by Task and Motion Imitation in Feature Space</h1>
+          <div class="column is-full_width">
+            <h2 class="title is-4"><a href="https://roboticsconference.org/">RSS 2023</a></h2>
+          </div>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=H1p3ve8AAAAJ&hl=en">Yuhang He*</a><sup>1</sup>,</span>
+              <a href="https://yuhanghe01.github.io/">Yuhang He*</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="https://irvingf7.github.io/">Irving Fang*</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=i_aajNoAAAAJ">Yiming Li</a><sup>2</sup>
+              <a href="https://roboticsyimingli.github.io/">Yiming Li</a><sup>2</sup>
             </span>
             <span class="author-block">
               <a href="https://rushibs.github.io">Rushi Bhavesh Shah</a><sup>2</sup>,
@@ -436,23 +440,28 @@
           
               
           
-          <section class="section" id="BibTeX">
+          <section class="section" id="BibTeX"> 
             <div class="container is-max-desktop content">
-              <h2 class="title">BibTeX</h2>
-              <pre style="display: inline-flex; text-align: left";><code>             
-@misc{he2023metricfree,
-title={Metric-Free Exploration for Topological Mapping by Task and Motion 
-Imitation in Feature Space}, 
-author={Yuhang He and Irving Fang and Yiming Li and Rushi Bhavesh Shah 
-and Chen Feng},
-year={2023},
-eprint={2303.09192},
-archivePrefix={arXiv},
-primaryClass={cs.RO}}
+              <h2 id="bibtexTitle" class="title">BibTeX</h2>
+              <button id="copyButton" onclick="copyToClipboard()">
+                <i class="fas fa-copy"></i>
+              </button>
+              <pre style="display: inline-flex; text-align: left";><code id="bibtexInfo">
+@INPROCEEDINGS{He-RSS-23, 
+  AUTHOR    = {Yuhang He AND Irving Fang AND Yiming Li AND Rushi Bhavesh Shah AND Chen Feng}, 
+  TITLE     = {{Metric-Free Exploration for Topological Mapping by Task and Motion Imitation in Feature Space}}, 
+  BOOKTITLE = {Proceedings of Robotics: Science and Systems}, 
+  YEAR      = {2023}, 
+  ADDRESS   = {Daegu, Republic of Korea}, 
+  MONTH     = {July}, 
+  DOI       = {10.15607/RSS.2023.XIX.099} 
+} 
                 </code>
+                
               </pre>
             </div>
           </section>
+          
           
           <section class="section" id="Acknowledgements">
             <div class="container is-max-desktop content">

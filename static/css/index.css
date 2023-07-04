@@ -3,6 +3,26 @@ body {
 }
 
 
+#copyButton{
+
+  margin-top: 0px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 0px solid #ccc;
+  background-color: #fff;
+  padding: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#copyButton:hover{
+  background-color: #eee;
+}
+
+#bibtexTitle{
+  margin-bottom: 0px;
+}
+
 .footer .icon-link {
     font-size: 25px;
     color: #000;
