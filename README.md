@@ -1,6 +1,8 @@
-# Metric-Free Exploration for Topological Mapping by Task and Motion Imitation in Feature Space, RSS 2023.
+# [Metric-Free Exploration for Topological Mapping by Task and Motion Imitation in Feature Space, RSS 2023](https://www.roboticsproceedings.org/rss19/p099.html).
 
-[Yuhang He](https://yuhanghe01.github.io/)\*, [Irving Fang](https://irvingf7.github.io/)\*, [Yiming Li](https://roboticsyimingli.github.io/), [Rushi Bhavesh Shah](https://rushibs.github.io/), [Chen Feng](https://scholar.google.com/citations?user=YeG8ZM0AAAAJ)
+[Yuhang He](https://yuhanghe01.github.io/)\*, [Irving Fang](https://irvingf7.github.io/)\*, [Yiming Li](https://yimingli-page.github.io/), [Rushi Bhavesh Shah](https://rushibs.github.io/), [Chen Feng](https://scholar.google.com/citations?user=YeG8ZM0AAAAJ)
+
+![](./figs_videos/teasing.png)
 
 ## Abstract
 
@@ -8,9 +10,9 @@ We propose DeepExplorer, a simple and lightweight metric-free exploration method
 
 
 ## Project Website
-Please visit [this website](https://ai4ce.github.io/DeepExplorer/) for more information like video presentation and visualization.
+Please visit [this website](https://ai4ce.github.io/DeepExplorer/) for more information like **video presentation** and **visualization**.
 
-## Environment
+## Environment Setup
 Please refer to the `requirements.txt` for the environment we run our experiment in.
 
 Note that we run all our experiment in `habitat-sim` and `habitat-lab` on version 0.1.6. The hash for `habitat-sim=0.1.6` is `781f787`. The hash for `habitat-lab=0.1.6` is `ac937fd`. Theoratically, the version between `habitat-sim` and `habitat-lab` should match, but we never experiment with this.
@@ -22,7 +24,9 @@ Because of the old `habitat` version, our Python version is stucked with `3.6`.
 I wrote [this tutorial](https://docs.google.com/document/d/1XujCOLZ3d-76s0n1U7U1S_X2c2eHNGTT4ZTIgBPw8NI/edit?usp=sharing) on installing `habitat` for our lab's junior member. It focuses on installing it in a HPC envrionment, but it may still be useful for you.
 
 ## TL;DR
-[TODO: Put some quick command line here to run our model]
+`train` contains all the code for training
+`exploration` contains all the code for exploration inference
+`navigation` contains all the code for navigation inference
 
 ## Data Preparation
 To generate the expert demonstration data we used for training, please refer to the `experdemon_datacollect` folder
